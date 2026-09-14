@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Skills Test</title>
+
+    <h1>Welcome to Cafe Fran</h1>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Order here</legend> 
+
+    <input type="checkbox" id="item1" value="125">
+        <label id="matcha_ichigo">Matcha Ichigo</label><br>
+    <input type="checkbox" id="item2" value="110">
+        <label id="dark_matcha">Dark Matcha</label><br>
+    <input type="checkbox" id="item3" value="145">
+        <label id="cold_strawberry_yuzu">Cold Strawberry Yuzu</label><br>
+    <input type="checkbox" id="item4" value="135">
+        <label id="mint_peppermint_chocolate">Mint Peppermint Chocolate</label><br>
+    <input type="checkbox" id="item5" value="130">
+        <label id="white_caramel_frappucino">White Caramel Frappucino</label><br>
+    
+        <button type="submit" py-click="create_order">Create Order</button><br>
+    </fieldset>
+
+    <h2>Receipt</h2>
+
+    <div id="show"></div>
+    <script type="py" src="main.py"></script>
+</html>
